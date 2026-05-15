@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My Deploy Website</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hello World 🚀</h1>
+
+    <h3>This is my beautiful deployed website</h3>
+
+    <button onclick="changeColor()">
+      Change Background Color
+    </button>
+  </div>
+
+  <script> function changeColor() {
+      const colors = [
+        "linear-gradient(135deg, #0f172a, #1e3a8a)",
+        "linear-gradient(135deg, #7c3aed, #2563eb)",
+        "linear-gradient(135deg, #059669, #0f172a)",
+        "linear-gradient(135deg, #dc2626, #7c2d12)",
+        "linear-gradient(135deg, #111827, #4f46e5)"
+      ];
+
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      document.body.style.background = randomColor;
+    }
+</script>
+  
+</body>
+</html>
